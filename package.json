@@ -1,0 +1,26 @@
+{
+  "name": "string-format-obj",
+  "version": "0.0.0",
+  "description": "Replace tokens from a string with values of an object",
+  "main": "index.js",
+  "files": [
+    "index.js",
+    "license"
+  ],
+  "scripts": {
+    "test": "mocha"
+  },
+  "keywords": [
+    "values",
+    "tokens",
+    "string",
+    "format",
+    "printf",
+    "fmt"
+  ],
+  "author": "Stephen Sawchuk <sawchuk@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "mocha": "^2.2.5"
+  }
+}
