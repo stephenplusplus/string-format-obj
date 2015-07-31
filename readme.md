@@ -11,4 +11,5 @@ format('{greeting} {thing}!', {
   greeting: 'Hello',
   thing: 'world'
 });
+// Hello world!
 ```

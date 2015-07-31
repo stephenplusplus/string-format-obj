@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "Replace tokens from a string with values of an object",
   "main": "index.js",
+  "repository": "stephenplusplus/string-format-obj",
   "files": [
     "index.js",
     "license"
