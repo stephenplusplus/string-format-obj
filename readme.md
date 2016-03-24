@@ -13,3 +13,15 @@ format('{greeting} {thing}!', {
 });
 // Hello world!
 ```
+
+If you want to cache the string
+
+```js
+var formatFunc = format('{greeting} {thing}!');
+
+formatFunc({
+  greeting: 'Howdy',
+  thing: 'doody'
+});
+// Howdy doody!
+```

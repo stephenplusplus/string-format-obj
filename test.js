@@ -29,4 +29,11 @@ describe('format', function () {
 
     assert.strictEqual(formatted, '0');
   });
+
+  it('should return a function if an object is not supplied', function() {
+    var formatFunc = format('{greeting} do!');
+    var formatted = formatFunc({ greeting: 'howdy' });
+
+    assert.strictEqual(formatted, 'howdy do!');
+  });
 });
