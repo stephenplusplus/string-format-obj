@@ -1,6 +1,6 @@
 {
   "name": "string-format-obj",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Replace tokens from a string with values of an object",
   "main": "index.js",
   "repository": "stephenplusplus/string-format-obj",
