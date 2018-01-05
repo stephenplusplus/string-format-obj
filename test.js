@@ -5,7 +5,7 @@ var assert = require('assert');
 var format = require('./index.js');
 
 describe('format', function () {
-  it('should replace denoated keys with corresponding values', function() {
+  it('should replace denoted keys with corresponding values', function() {
     var formatted = format('{greeting} {thing}!', {
       greeting: 'Hello',
       thing: 'world'
@@ -35,5 +35,19 @@ describe('format', function () {
     var formatted = formatFunc({ greeting: 'howdy' });
 
     assert.strictEqual(formatted, 'howdy do!');
+  });
+
+  it('should return a string if an object is not supplied to the function', function() {
+    var formatFunc = format('Hi there!');
+    var formatted = formatFunc();
+
+    assert.strictEqual(formatted, 'Hi there!');
+  });
+
+  it('should return a string with unsatisfied keys unchanged if an object is not supplied to the function', function() {
+    var formatFunc = format('Hi {name}!');
+    var formatted = formatFunc();
+
+    assert.strictEqual(formatted, 'Hi {name}!');
   });
 });
